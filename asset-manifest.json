@@ -1,23 +1,29 @@
 {
   "files": {
     "main.css": "/generasi-gigih-week-4-reflection/static/css/main.afd7172b.chunk.css",
-    "main.js": "/generasi-gigih-week-4-reflection/static/js/main.68ef972e.chunk.js",
-    "main.js.map": "/generasi-gigih-week-4-reflection/static/js/main.68ef972e.chunk.js.map",
-    "runtime-main.js": "/generasi-gigih-week-4-reflection/static/js/runtime-main.ec3cb5dd.js",
-    "runtime-main.js.map": "/generasi-gigih-week-4-reflection/static/js/runtime-main.ec3cb5dd.js.map",
-    "static/js/2.86b0dfa6.chunk.js": "/generasi-gigih-week-4-reflection/static/js/2.86b0dfa6.chunk.js",
-    "static/js/2.86b0dfa6.chunk.js.map": "/generasi-gigih-week-4-reflection/static/js/2.86b0dfa6.chunk.js.map",
-    "static/js/3.3eee43a9.chunk.js": "/generasi-gigih-week-4-reflection/static/js/3.3eee43a9.chunk.js",
-    "static/js/3.3eee43a9.chunk.js.map": "/generasi-gigih-week-4-reflection/static/js/3.3eee43a9.chunk.js.map",
+    "main.js": "/generasi-gigih-week-4-reflection/static/js/main.4cff30f6.chunk.js",
+    "main.js.map": "/generasi-gigih-week-4-reflection/static/js/main.4cff30f6.chunk.js.map",
+    "runtime-main.js": "/generasi-gigih-week-4-reflection/static/js/runtime-main.f3b19669.js",
+    "runtime-main.js.map": "/generasi-gigih-week-4-reflection/static/js/runtime-main.f3b19669.js.map",
+    "static/js/2.f3a15599.chunk.js": "/generasi-gigih-week-4-reflection/static/js/2.f3a15599.chunk.js",
+    "static/js/2.f3a15599.chunk.js.map": "/generasi-gigih-week-4-reflection/static/js/2.f3a15599.chunk.js.map",
+    "static/js/3.444489e6.chunk.js": "/generasi-gigih-week-4-reflection/static/js/3.444489e6.chunk.js",
+    "static/js/3.444489e6.chunk.js.map": "/generasi-gigih-week-4-reflection/static/js/3.444489e6.chunk.js.map",
     "index.html": "/generasi-gigih-week-4-reflection/index.html",
     "static/css/main.afd7172b.chunk.css.map": "/generasi-gigih-week-4-reflection/static/css/main.afd7172b.chunk.css.map",
-    "static/js/2.86b0dfa6.chunk.js.LICENSE.txt": "/generasi-gigih-week-4-reflection/static/js/2.86b0dfa6.chunk.js.LICENSE.txt",
+    "static/js/2.f3a15599.chunk.js.LICENSE.txt": "/generasi-gigih-week-4-reflection/static/js/2.f3a15599.chunk.js.LICENSE.txt",
+    "static/media/popup-1.a578f15f.png": "/generasi-gigih-week-4-reflection/static/media/popup-1.a578f15f.png",
+    "static/media/popup-2.8ed1cab9.jpg": "/generasi-gigih-week-4-reflection/static/media/popup-2.8ed1cab9.jpg",
+    "static/media/popup-3.5f63126c.jpg": "/generasi-gigih-week-4-reflection/static/media/popup-3.5f63126c.jpg",
+    "static/media/question-1.45513f5d.jpg": "/generasi-gigih-week-4-reflection/static/media/question-1.45513f5d.jpg",
+    "static/media/question-2.651b5ce9.jpg": "/generasi-gigih-week-4-reflection/static/media/question-2.651b5ce9.jpg",
+    "static/media/question-3.701cc7c5.jpg": "/generasi-gigih-week-4-reflection/static/media/question-3.701cc7c5.jpg",
     "static/media/slider-5.c66c97b6.jpg": "/generasi-gigih-week-4-reflection/static/media/slider-5.c66c97b6.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ec3cb5dd.js",
-    "static/js/2.86b0dfa6.chunk.js",
+    "static/js/runtime-main.f3b19669.js",
+    "static/js/2.f3a15599.chunk.js",
     "static/css/main.afd7172b.chunk.css",
-    "static/js/main.68ef972e.chunk.js"
+    "static/js/main.4cff30f6.chunk.js"
   ]
 }
