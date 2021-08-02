@@ -37,6 +37,7 @@ const HeroSlider = styled.div`
     align-items: center;
     justify-content: center;
 
+
     &::before {
         content: '';
         position: absolute;
@@ -66,11 +67,25 @@ const HeroImage = styled.img`
 const HeroContent = styled.div`
     position: relative;
     z-index: 10;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     max-width: 1600px;
     width: calc(100% - 100px);
     color: #fff; 
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr
+    }
+`
+
+const HeroColumnLeft = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 1.4;
+    padding: 1rem 2rem;
+    order: 1;
 
     h1 {
         font-size: clamp(1rem, 8vw, 2rem);
@@ -81,6 +96,36 @@ const HeroContent = styled.div`
 
     p {
         margin-bottom: 1.2rem;
+        max-width: 500px;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 1px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+`
+const HeroColumnRight = styled.div`
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+
+    img {
+        width: 80%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.5s ease-in-out; 
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
     }
 `
 
@@ -132,7 +177,7 @@ const Hero = ({ slides }) => {
             setCurrent(current => (current === length - 1 ? 0 : current + 1))
         }
 
-        timeout.current = setTimeout(nextSlide, 3000)
+        timeout.current = setTimeout(nextSlide, 6000)
 
         return function () {
             if (timeout.current) {
@@ -160,7 +205,7 @@ const Hero = ({ slides }) => {
     }
 
     return (
-        <HeroSection>
+        <HeroSection id="hero">
             <HeroWrapper>
                 {slides.map((slide, index) => {
                     return (
@@ -169,15 +214,28 @@ const Hero = ({ slides }) => {
                                 <HeroSlider>
                                     <HeroImage src={slide.image} alt={slide.alt} />
                                     <HeroContent>
-                                        <h1>{slide.title}</h1>
-                                        <p>{slide.description}</p>
-                                        <Button 
-                                            to={slide.path} 
-                                            primary='true'
-                                        >
-                                            {slide.label}
-                                            <Arrow />
-                                        </Button>
+                                        <HeroColumnLeft>
+                                            <h1>{slide.title}</h1>
+                                            <p>{slide.description}</p>
+                                            <Button 
+                                                to={slide.path} 
+                                                primary='true'
+                                                smooth={true}
+                                                duration={500}
+                                                spy={true}
+                                                exact="true"
+                                                offset={100}
+                                                onClick={slide.link}
+                                            >
+                                                {slide.label}
+                                                <Arrow />
+                                            </Button>
+                                        </HeroColumnLeft>
+                                        <HeroColumnRight>
+                                            {
+                                                slide.popup !== '' && <img src={slide.popup} alt={slide.alt} />
+                                            }
+                                        </HeroColumnRight>
                                     </HeroContent>
                                 </HeroSlider>
                             )}
